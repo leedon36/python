@@ -1,0 +1,87 @@
+a='Hello'
+b='world'
+c=a+' '+b+'!'
+print(c)
+d=a*3
+print(d)
+e=len(b)
+print(e)
+
+a='Hello Python'
+#문자열은 immutable한 자료형이다
+print(a.count('o'))
+print(a.find('o'))
+print(a.index('o'))
+print(','.join(a))
+print(a.replace('Py','MY'))
+print(a.split("o"))
+print(a.upper())
+print(a.lower())
+print(a) #함수를 실행해도  a의 원본 데이터는 변하지않는다.
+
+a=128
+print(type(a)) #int=정수 양의 정수,음의 정수,0
+
+num_str ='720'
+print(type(num_str))#str = 문자열
+num=int(num_str)#자료형 변환
+print(type(num))
+
+num=100
+num_str=str(num) #형변환 int-> str
+print(type(num_str))   # <class 'str'>
+
+letters = 'python'
+print(letters[0],letters[2])
+license_plate = "24가 2210"
+print(license_plate[-4:])
+string = "홀짝홀짝홀짝"
+print(string[::2])
+string = "PYTHON"
+print(string[::-1])
+phone_number = "010-1111-2222"
+print(phone_number.replace('-',' '))
+print(phone_number.replace('-',""))
+url = "http://sharebook.kr"
+print(url.split('.')[-1])
+string = 'abcdfe2a354a32a'
+print(string.replace('a','A'))
+string = 'abcd'
+string=string.replace('b', 'B')
+print(string)
+a=3
+b=4
+print(a + b)
+print("Hi" * 3)
+a='-'
+b=a*80
+print(b)
+t1 = 'python'
+t2 = 'java'
+a=t1+" "+t2+' '
+print(a*4)
+name1 = "김민수"
+age1 = 10
+name2 = "이철희"
+age2 = 13
+print("이름",name1,'나이',age1)
+print("이름",name2,'나이',age2)
+print("이름: %s 나이: %d" %(name1,age1))
+print("이름: %s 나이: %d" %(name2,age2))
+#%s=문자열,%d=정수,%f=실수,%c=문자
+print('이름:{0} 나이: {0}'.format(name1,age1))
+print(f'이름: {name1} 나이: {age1}')
+상장주식수 = "5,969,782,550"
+a=(상장주식수.replace(',',''))
+f=int(a)
+print(type(f))
+분기 = "2020/03(E) (IFRS연결)"
+print(분기[:7])
+data = "   삼성전자    "
+print(data.strip(' '))
+
+#print(data.lstrip(' ')) 왼쪽에서부터 지운다
+
+#print(data.strip(' ')) 양쪽에서부터 지운다
+
+#print(data.rstrip(' ')) 오른쪽에서부터 지운다
